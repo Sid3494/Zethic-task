@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, sans-serif;
+  background: hsl(0, 0%, 14%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+h1 {
+  color: #ffbc1f;
+}
+
+#Todo-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+#Todo-form input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
+}
+
+#Todo-form button {
+  padding: 10px 20px;
+  background: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#Todo-form button:hover {
+  background: #218838;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+  width: 320px;
+  margin: 0 auto;
+}
+
+#taskList li {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  font-style: italic;
+  background: #193148 !important;
+  color: hsl(0, 0%, 100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  font-size: 21px;
+  cursor: pointer;
+  color: red;
+}
+
+.delete-btn:hover {
+  transform: scale(1.2);
+}
+
+.update-btn {
+  background: none;
+  color: hsl(208, 100%, 33%);
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.update-btn:hover {
+  transform: scale(1.2);
+}
